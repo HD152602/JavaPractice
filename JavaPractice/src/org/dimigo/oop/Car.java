@@ -32,7 +32,7 @@ public class Car {
 	}
 	public String getColor() {
 		return color;
-	}
+	}ㅇㄴㅁㄹ
 	public void setColor(String newColor) {
 		color = newColor;
 	}
