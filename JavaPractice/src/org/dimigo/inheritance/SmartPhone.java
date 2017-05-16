@@ -34,6 +34,8 @@ public class SmartPhone {
 	}
 	public void pay() {}
 	public void useSpecialFunction(SmartPhone phone) {
+		if(phone==null)
+			return;
 		if(phone instanceof IPhone)
 			((IPhone)phone).useAirDrop();
 		else
