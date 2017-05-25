@@ -24,7 +24,7 @@ public interface IDBManager {
 	void update();
 	void delete();
 	public static IDBManager getDBObject(String database) throws Exception {
-		Class<?> cls =  Class.forName(PKG_NAME+database);  // org.dimigo.interfaces.OracleDB
+		Class cls =  Class.forName(PKG_NAME+database);  // org.dimigo.interfaces.OracleDB
 		IDBManager db = (IDBManager)cls.newInstance();
 		return db;
 	}
