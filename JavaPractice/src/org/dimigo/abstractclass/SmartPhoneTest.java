@@ -26,6 +26,7 @@ public class SmartPhoneTest {
 			i.pay();
 			i.useSpecialFunction();
 			i.turnOff();
+			//asdfasdfa
 			
 			System.out.println();
 		}
