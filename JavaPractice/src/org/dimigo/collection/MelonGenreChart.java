@@ -24,7 +24,6 @@ public class MelonGenreChart {
 		List<Music> list2 = new ArrayList<>();
 		list1.add(new Music("팔레트","아이유"));
 		map.put("발라드", list1);
-		//list.clear();
 		list2.add(new Music("I LUV IT","PSY"));
 		list2.add(new Music("맞지?","언니쓰"));
 		map.put("댄스", list2);
@@ -36,7 +35,7 @@ public class MelonGenreChart {
 		printMap(map);
 		System.out.println();
 		System.out.println("--<<댄스 1위 곡 삭제>>--");
-		list2.remove(1);
+		list2.remove(0);
 		printMap(map);
 		System.out.println();
 		System.out.println("--<<전체 리스트 삭제>>--");
@@ -46,11 +45,16 @@ public class MelonGenreChart {
 	public static void printMap(Map<String, List<Music>> map)  {
 		
 		for(String key:map.keySet()) {
+			
 			System.out.println("["+key+"]");
+			
 			int i= 1;
+			
 			for(Music n:map.get(key)){
+			
 				System.out.println(i+". "+n);
 				i++;
+			
 			}
 		}
 	}
